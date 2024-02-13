@@ -179,3 +179,81 @@ body{
     height: 14%;
    }
   }
+   @media screen and (max-width:768px){
+  
+    .container{
+      display: flex;
+      flex-direction:column;
+    
+      
+     
+    }
+    .logo-img{
+      margin-top: 5%;
+      margin-left: -15px;
+     
+    }
+    .title{
+     
+      font-size: 19px;
+     margin-left: 1%;
+      margin-top: 10%;
+    }
+    #input-texto{
+      margin-left: 19%;
+      padding:5px;
+      margin-top: 18%;
+      
+    }
+    .min{
+      font-size: 15px;
+      margin-top: 30%;
+      margin-left: 20%;
+     }
+     
+   #buttom-encriptar{
+    
+    padding:0%;
+    font-size: 10px;
+    width:11%;
+    margin-left:123px;
+    height: 14%;
+    margin-bottom: 150px;
+    margin-top: 30px;
+    
+   }
+  #buttom-desencriptar{
+    
+    padding:0%;
+    font-size: 10px;
+    width:11%;
+    height: 14%;
+   }
+  #img-right{
+  
+    width:70%;
+    margin-left: 90px;
+    margin-top: -20px;
+
+  
+  }
+  #texto{
+    font-size: 20px;
+    margin-left:50%;
+    text-align: center;
+  }
+  #texto-2{
+     font-size: 16px;
+     margin-top: 40px;
+     width:104%;
+     margin-left: 28%;
+     
+    }
+  
+ 
+  
+   
+  }
+   
+  
+  
