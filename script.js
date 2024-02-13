@@ -15,6 +15,7 @@ function encriptar(){
     document.getElementById("copy").style.display="show";
     document.getElementById("copy").style.display="inherit";
     
+  
 
 
 }
