@@ -206,23 +206,23 @@ body{
       width:100%;
     }
     .logo-img{
-      margin-right: -16%;
-      margin-left: -18%;
-      width:15%;
+     
+      width:8%;
     }
     .title{
-      font-size: 25px;
+      font-size: 30px;
       margin-left: 5%;
       margin-top: 4%;
     }
     .text-i{
       width:100%;
-      margin-left: 22%;
-      font-size: 16px;
+      margin-left: 25%;
+      font-size: 18px;
     }
     .min{
-      font-size:15px;
-      margin-left: 20%;
+      font-size:17px;
+      margin-left: 25%;
+      margin-top: 27%;
     }
     #buttom-encriptar{
       margin-left: 18%;
@@ -234,18 +234,25 @@ body{
       font-size: 16px;
     }
     #img-right{
-      margin-left:45%;
-      width:70%;
+      margin-top: -190%;
+      margin-bottom: 80%;
+      margin-left:320%;
+      width:80%;
     }
     #texto{
       font-size: 21px;
-      margin-left: 50%;
+      margin-left: 350%;
+      margin-top: -69%;
     }
     #texto-2{
-      margin-left: 40%;
+      margin-left: 330%;
+      width:60%;
+      height: 100%;
     }
     #copy{
-      margin-left: 80%;
+      margin-left: 350%;
+      width:23%;
+      height: 25%;
     }
   };
 
