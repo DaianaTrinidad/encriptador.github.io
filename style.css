@@ -198,8 +198,43 @@ body{
    width:20%;
    height: 6%;
    }
- 
- }
+  }
+  @media (min-width: 1200px){
+    .logo-img{
+      margin-right: -16%;
+      margin-left: -18%;
+      width:8%;
+    }
+    .title{
+      font-size: 23px;
+      margin-left: -1%;
+      margin-top: 4%;
+    }
+    .text-i{
+      margin-left: 14%;
+      font-size: 13px;
+    }
+    .min{
+      font-size:13px;
+      margin-left: 12%;
+    }
+    #buttom-encriptar{
+      margin-left: 11%;
+    }
+    #img-right{
+      margin-left:18%;
+    }
+    #texto{
+      font-size: 21px;
+      margin-left: -0%;
+    }
+    #texto-2{
+      margin-left: 10%;
+    }
+    #copy{
+      margin-left: 48%;
+    }
+  };
 
    
 
