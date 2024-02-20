@@ -211,23 +211,24 @@ body{
     }
     .title{
       font-size: 30px;
-      margin-left: 5%;
-      margin-top: 4%;
+      margin-left: 4%;
+      margin-top: 3%;
     }
     .text-i{
       width:100%;
-      margin-left: 25%;
+      margin-left: 20%;
       font-size: 18px;
     }
     .min{
       font-size:17px;
-      margin-left: 25%;
-      margin-top: 27%;
+      margin-left: 19%;
+      margin-top: 25%;
     }
     #buttom-encriptar{
       margin-left: 18%;
       width:15%;
       font-size: 16px;
+      margin-top: 3%;
     }
     #buttom-desencriptar{
       width:15%;
@@ -235,24 +236,27 @@ body{
     }
     #img-right{
       margin-top: -190%;
-      margin-bottom: 80%;
-      margin-left:320%;
-      width:80%;
+      margin-bottom: 90%;
+      margin-left:220%;
+      width:75%;
     }
     #texto{
-      font-size: 21px;
-      margin-left: 350%;
-      margin-top: -69%;
+      font-size: 18px;
+      margin-left: 260%;
+      margin-top: -90%;
+      
     }
     #texto-2{
-      margin-left: 330%;
-      width:60%;
-      height: 100%;
+      margin-left: 240%;
+      width:75%;
+      height: 70%;
+      margin-top: 3%;
     }
     #copy{
-      margin-left: 350%;
+      margin-left: 260%;
       width:23%;
-      height: 25%;
+      height: 24%;
+      margin-bottom: 50%;
     }
   };
 
