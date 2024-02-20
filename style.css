@@ -200,10 +200,15 @@ body{
    }
   }
   @media (min-width: 1200px){
+    .container{
+      margin: auto;
+      padding: 5px;
+      width:100%;
+    }
     .logo-img{
       margin-right: -16%;
       margin-left: -18%;
-      width:8%;
+      width:15%;
     }
     .title{
       font-size: 25px;
