@@ -1,53 +1,48 @@
-function encriptar(){
-    let texto= document.getElementById("input-texto").value.toLowerCase();
-    //i para que afecte tanto mayusculas como minusculas de letra
-    // g es para toda la linea u oracion
-    //m es para que afecte a multiples lineas o parrafos
-    var textoCifrado= texto.replace(/e/igm,"enter");
-    var textoCifrado= textoCifrado.replace(/i/igm,"imes");
-    var textoCifrado= textoCifrado.replace(/a/igm,"ai");
-    var textoCifrado= textoCifrado.replace(/o/igm,"ober");
-    var textoCifrado= textoCifrado.replace(/u/igm,"ufat");
-    //para que cuando toque el boton de encriptar me desaparece la imagen
-    document.getElementById("img-right").style.display="none";
-    document.getElementById("texto").style.display="none";
-    document.getElementById("texto-2").innerHTML= textoCifrado;
-    document.getElementById("copy").style.display="show";
-    document.getElementById("copy").style.display="inherit";
-    
-  
+// texto donde pongo el texto para encriptarlo
+const textoAEncriptar= document.querySelector(".text-i");
+//texto encriptado
+const textoEncriptado= document.querySelector("#texto-2");
 
+const codigoReemplazado= [
+    ["e","enter"],
+    ["i","imes"],
+    ["a","ai"],
+    ["o","ober"],
+    ["u","ufat"],
+];
 
+// Texto encriptado
+function btnEncriptar(){
+//me muestra el valor del texto que ingrese encriptado porque le pase la funcion encriptar
+const texto= encriptar(textoAEncriptar.value);
+textoEncriptado.value=texto;
 }
-function desencriptar(){
-    let texto= document.getElementById("input-texto").value.toLowerCase();
-    //i para que afecte tanto mayusculas como minusculas de letra
-    // g es para toda la linea u oracion
-    //m es para que afecte a multiples lineas o parrafos
-    var textoCifrado= texto.replace(/enter/igm,"e");
-    var textoCifrado= textoCifrado.replace(/imes/igm,"i");
-    var textoCifrado= textoCifrado.replace(/ai/igm,"a");
-    var textoCifrado= textoCifrado.replace(/ober/igm,"o");
-    var textoCifrado= textoCifrado.replace(/ufat/igm,"u");
-    //para que cuando toque el boton de encriptar me desaparece la imagen
-    document.getElementById("img-right").style.display="none";
-    document.getElementById("texto").style.display="none";
-    document.getElementById("texto-2").innerHTML= textoCifrado;
-    document.getElementById("copy").style.display="show";
-    document.getElementById("copy").style.display="inherit";
-    
 
-
-}
- function copiar(){
-    var contenido= document.querySelector("#texto-2")
-    contenido.select();
-    document.execCommand("cut");
-    alert("Se copió");
+function encriptar(fraseEncriptada){
+ for(let i = 0 ; i < codigoReemplazado.length; i++){
+   if(fraseEncriptada.includes(codigoReemplazado[i][0])){
+   fraseEncriptada= fraseEncriptada.replaceAll(
+   codigoReemplazado[i][0],
+    codigoReemplazado[i][1]
+   )
+   }
  }
+return fraseEncriptada;
+};
 
-
-
-
-
-    
+// Texto desencriptado
+function btnDesencriptar(){
+ const textoDos= desencriptar(textoEncriptado.value);
+ textoEncriptado.value=textoDos;
+}
+function desencriptar(textoDesencriptado){
+    for(let i = 0 ; i < codigoReemplazado.length; i++){
+        if(textoDesencriptado.includes(codigoReemplazado[i][1])){
+        textoDesencriptado= textoDesencriptado.replaceAll(
+        codigoReemplazado[i][1],
+         codigoReemplazado[i][0]
+        )
+        }
+      }
+     return textoDesencriptado;
+     };
