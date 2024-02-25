@@ -1,3 +1,5 @@
+
+
 // texto donde pongo el texto para encriptarlo
 const textoAEncriptar= document.querySelector(".text-i");
 //texto encriptado
@@ -14,7 +16,8 @@ const codigoReemplazado= [
 // Texto encriptado
 function btnEncriptar(){
 //me muestra el valor del texto que ingrese encriptado porque le pase la funcion encriptar
-const texto= encriptar(textoAEncriptar.value);
+
+const texto= encriptar(textoAEncriptar.value.toLowerCase());
 textoEncriptado.value=texto;
 }
 
@@ -25,10 +28,19 @@ function encriptar(fraseEncriptada){
    codigoReemplazado[i][0],
     codigoReemplazado[i][1]
    )
+
    }
+   limpiarTexto();
+
  }
-return fraseEncriptada;
+ return fraseEncriptada;
 };
+
+
+//para que luego de apretar encriptar no me muestre la palabra.
+function limpiarTexto(){
+    document.querySelector(".text-i").value = '';
+}
 
 // Texto desencriptado
 function btnDesencriptar(){
