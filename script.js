@@ -46,3 +46,10 @@ function desencriptar(textoDesencriptado){
       }
      return textoDesencriptado;
      };
+//Función de copiar
+const btnCopiar=document.querySelector("#copy");
+btnCopiar.addEventListener("click",copiar= ()=>{
+const contenido= document.querySelector("#texto-2").textContent;
+navigator.clipboard.writeText(contenido);
+alert("Se copió");
+})
